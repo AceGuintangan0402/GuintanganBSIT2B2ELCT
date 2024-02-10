@@ -1,0 +1,141 @@
+/* Style for the navigation bar */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  background-image: url('https://images8.alphacoders.com/823/823657.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+}
+
+nav {
+  background-color: black;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between; /* Align items to the start and end */
+  padding: 10px 20px;
+  position: relative; /* Ensure proper stacking order */
+  z-index: 1; /* Ensure navigation bar stays on top of the overlay */
+}
+.logo {
+  color: white;
+  font-size: 50px;
+  margin-left: 20px;
+}
+.nav-right {
+  display: flex;
+}
+nav a {
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  transition: background-color 0.3s, border-radius 0.3s; /* Transition for smooth effect */
+}
+nav a:hover {
+  background-color: #a8b4ac;
+  color: rgb(0, 0, 0);
+  border-radius: 8px; /* Rounded corners on hover */
+}
+
+.content {
+  padding: 20px;
+  color: white;
+  position: relative; /* Ensure proper stacking order */
+  z-index: 1; /* Ensure content stays on top of the overlay */
+  padding-bottom: 15%;
+}
+
+.content h1 {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100px;
+  padding: 40px;
+}
+
+/* About and Contacts Sections */
+
+.about-section,
+.contacts-section {
+  padding: 20px;
+  color: rgb(4, 1, 1);
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff; /* Background color for about and contacts sections */
+}
+
+.about-section h2,
+.contacts-section h2 {
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 20px;
+  
+  
+}
+
+.about-section p,
+.contacts-section p {
+  font-size: 20px;
+}
+
+.about-section img {
+  display: block; /* Make the image a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%; /* Set the maximum width to prevent the image from overflowing its container */
+  height: 500px;
+  margin-left: auto; /* Push the image to the right */
+  border-radius: 20%;
+ 
+}
+
+.about-section {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Vertically center the content */
+}
+
+.about-section h2{
+  padding: 5%;
+}
+
+
+.contacts-section {
+  padding: 20px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  background-color: black;
+}
+
+.contacts-section h2 {
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.contacts-section p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.contact-icons img {
+  margin-right: 20px;
+  width: 50px;
+  height: auto;
+}

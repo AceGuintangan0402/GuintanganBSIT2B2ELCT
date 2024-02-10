@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>AceWeb</title>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+  <div class="logo">
+    AceWeb
+  </div>
+  <div class="nav-right">
+    <a  href="main.html">Home</a>
+    <a href="#" onclick="scrollToContacts('contacts-section')">Contacts</a>
+    <a href="learn.html">Learn</a>
+    <a href="#" onclick="scrollToContacts('about-section')">About</a>
+  </div>
+</nav>
+
+<!-- Page content -->
+<div class="overlay"></div>
+<div class="content" >
+  <h1>Introduction To Electrical Circuits</h1>
+</div>
+
+
+
+<div class="summarize">
+    <h1></h1>
+</div>
+<!-- About Section -->
+<div class="about-section">
+  <h2>Ace Jefferson Guintangan 
+    BSIT 2 BLOCK 2
+  </h2>
+  <img 
+  src="https://scontent.fmnl13-2.fna.fbcdn.net/v/t39.30808-6/398011125_753740843177030_7471698323778777595_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHn0gl-0pOdniHbzyqzcZeqTBFOwv1W_7pMEU7C_Vb_uhLUrBSGwG_zIJ4IVhvmT6o-4mYxt-NUBqW9-vwvVaRD&_nc_ohc=9g5hM0myumAAX_va2vq&_nc_zt=23&_nc_ht=scontent.fmnl13-2.fna&oh=00_AfDehGzeSG04R9fxJEt1uWNLnVbn_UtGzIi9clViGcnIYA&oe=65CB9654" 
+  alt="handsome creator">
+  
+</div>
+
+
+<!-- Contacts Section -->
+<div class="contacts-section">
+    <h2>Contacts</h2>
+    <p>This is the contacts section. You can add contact information or a contact form here.</p>
+    <div class="contact-icons">
+      <a href="https://web.facebook.com/acejefferson.guintangan"><img class="facebook-logo" src="https://i.pinimg.com/736x/5d/45/b9/5d45b993a78be35cb26264c453e294c0.jpg" alt="Facebook Logo"></a>
+      <a href="acemanter12@gmail.com"><img class="email-logo" src="https://e7.pngegg.com/pngimages/675/142/png-clipart-email-address-computer-icons-symbol-email-marketing-send-email-button-miscellaneous-emblem.png" alt="Email Logo"></a>
+      <a href=""></a><img class="tiktok-logo" src="https://banner2.cleanpng.com/20231123/xjc/transparent-tiktok-logo-black-and-white-logo-tiktok-app-minima-minimalist-black-and-white-tiktok-app-logo655f13f29129a0.9004913917007298425946.jpg" alt="TikTok Logo">
+    </div>
+  </div>
+  <script>
+    function scrollToContacts(sectionClassName) {
+        var sections = document.getElementsByClassName(sectionClassName);
+        if (sections.length > 0) {
+            sections[0].scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    </script>
+    
+    
